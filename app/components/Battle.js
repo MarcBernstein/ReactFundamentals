@@ -4,7 +4,6 @@ var PropTypes = require('prop-types');
 class PlayerInput extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       username: ''
     }
@@ -57,7 +56,7 @@ class PlayerInput extends React.Component {
   }
 }
 
-PlayerInput.PropTypes = {
+PlayerInput.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired
@@ -68,8 +67,8 @@ class Battle extends React.Component {
 
     this.state = {
       playerOneName: '',
-      playerOneImage: '',
-      playerTwoName: null,
+      playerTwoName: '',
+      playerOneImage: null,
       playerTwoImage: null
     }
 

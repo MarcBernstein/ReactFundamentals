@@ -47,11 +47,11 @@ function RepoGrid(props) {
   )
 }
 
-RepoGrid.PropTypes = {
+RepoGrid.propTypes  = {
   repos: PropTypes.array.isRequired
 }
 
-SelectLanguage.PropTypes = {
+SelectLanguage.propTypes = {
   selectedLang: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired
 }
