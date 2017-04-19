@@ -1,8 +1,8 @@
 body {
-  font-family: Segoe UI, Roboto,sans-serif;
+  font-family: Segoe UI, Roboto, sans-serif;
 }
 
-ul{
+ul {
   padding: 0;
 }
 
@@ -26,9 +26,9 @@ a {
 }
 
 .languages li {
-   margin: 10px;
-   font-weight: bold;
-   cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .popular-list {
@@ -97,7 +97,35 @@ a {
   transform: translateY(1px);
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  font-size: 16px;
+  width: 80%;
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
 }

@@ -61,6 +61,11 @@ PlayerInput.propTypes = {
   label: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired
 }
+
+PlayerInput.defaultProps = {
+  label: 'Username',
+}
+
 class Battle extends React.Component {
   constructor(props) {
     super(props);
@@ -72,7 +77,7 @@ class Battle extends React.Component {
       playerTwoImage: null
     }
 
-    this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(id, username) {
